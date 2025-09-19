@@ -4,6 +4,7 @@ import Theme1 from "@/app/raspina/Layout";
 import Theme2 from "@/app/diba/Layout";
 import "./globals.css";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function RootLayout({ children }) {
   const [domain, setDomain] = useState("");
@@ -35,17 +36,33 @@ export default function RootLayout({ children }) {
 
   // Determine which theme to use based on domain
   const getTheme = () => {
-    if (domain.includes("raspina.shop")) {
+    if (domain === "raspina.shop" || domain === "www.raspina.shop") {
       return Theme1;
-    } else if (domain.includes("dibajahansanat.site")) {
-      return Theme2;
     }
+    return Theme2;
     // Default fallback (you can set this to either Theme1 or Theme2)
-    return Theme1;
   };
 
   const Theme = getTheme();
 
+  const router = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const hostname = window.location.hostname;
+
+      if (domain.includes("raspina")) {
+        router.replace("/raspina");
+      } else if (hostname.includes("diba")) {
+        router.replace("/diba");
+      } else {
+        // Default fallback - you can set this to either /raspina or /diba
+        router.replace("/raspina");
+      }
+    }
+  }, [router]);
+
+  console.log("Current domain:", domain);
   // Show loading or default theme while determining domain
   if (isLoading) {
     return (

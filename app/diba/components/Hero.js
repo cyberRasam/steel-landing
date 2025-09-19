@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="relative">
       <img
-        src="https://images.unsplash.com/photo-1544829099-9e4c12d6a0c8?auto=format&fit=crop&w=1600&q=80"
+        src="./images/hero.png"
         alt="صنعت فولاد"
         className="w-full h-64 md:h-96 object-cover"
       />
