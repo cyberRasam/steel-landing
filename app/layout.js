@@ -1,8 +1,8 @@
 "use client";
+import "./globals.css";
 
 import Theme1 from "@/app/raspina/Layout";
 import Theme2 from "@/app/diba/Layout";
-import "./globals.css";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 

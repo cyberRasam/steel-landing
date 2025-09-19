@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 /* RTL + base */
-:root{ --font-sans: 'Vazirmatn', Tahoma, sans-serif; }
+:root{ --font-sans: 'Vazirmatn', Tahoma, sans-serif;
+  --raspina-primary: #2563eb;
+  --diba-primary: #f59e0b; }
 html,body { height:100%; }
 body {
   direction: rtl;

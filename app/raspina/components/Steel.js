@@ -1,31 +1,70 @@
+// export default function Steel() {
+//   return (
+//     <section className="bg-gray-50 py-12 md:py-20 px-6">
+//       <div className="max-w-4xl mx-auto">
+//         <h2 className="text-3xl font-bold text-[var(--raspina-primary)] mb-4 text-center">
+//           خرید فولاد آلیاژی
+//         </h2>
+//         <p className="text-justify leading-8 mb-4">
+//           فولاد آلیاژی (Alloy Steel) با افزودن عناصری مانند کروم، نیکل، منگنز،
+//           سیلیسیوم، مولیبدن و وانادیوم به دست می‌آید تا خواص مکانیکی آن بهبود
+//           یابد؛ از جمله مقاومت، سختی و چقرمگی. این تغییر خواص فولاد را برای
+//           کاربردهای صنعتی و مهندسی حساس مناسب می‌سازد.
+//         </p>
+
+//         <div className="grid md:grid-cols-2 gap-6 mt-6">
+//           <div className="p-6 bg-white rounded-lg shadow">
+//             <h3 className="font-bold mb-2">محصولات قابل عرضه</h3>
+//             <ul className="list-disc pr-4 space-y-2 text-justify">
+//               <li>میلگرد CK45, MO40, ST52</li>
+//               <li>تسمه فولادی MO40</li>
+//               <li>ورق سیاه ST37 (فولاد مبارکه)</li>
+//               <li>فولاد SPK و فولاد گرمکار 1.2344</li>
+//             </ul>
+//           </div>
+//           <div className="p-6 bg-white rounded-lg shadow">
+//             <h3 className="font-bold mb-2">خدمات و مزایا</h3>
+//             <ul className="list-disc pr-4 space-y-2 text-justify">
+//               <li>تحویل سریع و بسته‌بندی مناسب</li>
+//               <li>قیمت رقابتی در بازار عمده</li>
+//               <li>قابلیت برش و سفارش اختصاصی</li>
+//               <li>پشتیبانی فنی در انتخاب متریال مناسب</li>
+//             </ul>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
 export default function Steel() {
   return (
-    <section className="bg-gray-50 py-12 md:py-20 px-6">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-[var(--raspina-primary)] mb-4 text-center">
+    <section className="bg-gray-50 py-16 px-6">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-blue-600 mb-8 text-center">
           خرید فولاد آلیاژی
         </h2>
-        <p className="text-justify leading-8 mb-4">
+        <p className="text-justify leading-relaxed mb-8 text-gray-700">
           فولاد آلیاژی (Alloy Steel) با افزودن عناصری مانند کروم، نیکل، منگنز،
-          سیلیسیوم، مولیبدن و وانادیوم به دست می‌آید تا خواص مکانیکی آن بهبود
-          یابد؛ از جمله مقاومت، سختی و چقرمگی. این تغییر خواص فولاد را برای
-          کاربردهای صنعتی و مهندسی حساس مناسب می‌سازد.
+          سیلیسیوم، مولیبدن و وانادیوم، خواص مکانیکی خود را بهبود می‌دهد:
+          مقاومت، سختی و چقرمگی بالاتر. این فولادها مناسب کاربردهای حساس صنعتی و
+          مهندسی هستند.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-6">
-          <div className="p-6 bg-white rounded-lg shadow">
-            <h3 className="font-bold mb-2">محصولات قابل عرضه</h3>
-            <ul className="list-disc pr-4 space-y-2 text-justify">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <h3 className="font-bold mb-4">محصولات قابل عرضه</h3>
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
               <li>میلگرد CK45, MO40, ST52</li>
               <li>تسمه فولادی MO40</li>
               <li>ورق سیاه ST37 (فولاد مبارکه)</li>
               <li>فولاد SPK و فولاد گرمکار 1.2344</li>
             </ul>
           </div>
-          <div className="p-6 bg-white rounded-lg shadow">
-            <h3 className="font-bold mb-2">خدمات و مزایا</h3>
-            <ul className="list-disc pr-4 space-y-2 text-justify">
-              <li>تحویل سریع و بسته‌بندی مناسب</li>
+          <div className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <h3 className="font-bold mb-4">خدمات و مزایا</h3>
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
+              <li>تحویل سریع و بسته‌بندی حرفه‌ای</li>
               <li>قیمت رقابتی در بازار عمده</li>
               <li>قابلیت برش و سفارش اختصاصی</li>
               <li>پشتیبانی فنی در انتخاب متریال مناسب</li>
