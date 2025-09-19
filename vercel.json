@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/(raspina)" },
+    { "source": "/raspina", "destination": "/(raspina)" },
+    { "source": "/diba", "destination": "/(diba)" }
+  ]
+}
