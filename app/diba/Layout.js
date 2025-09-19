@@ -1,5 +1,6 @@
 import "../globals.css";
 import "./diba.css";
+import { Helmet } from "react-helmet";
 
 export const metadata = {
   title: "جهانتاب صنعت دیبا | خرید و فروش فولاد و پلیمر",
@@ -11,12 +12,14 @@ export const metadata = {
 export default function DibaLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
-      <head>
+      <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="keywords" content={metadata.keywords} />
         <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
+        <meta name="title" content={metadata.title} />
+        <meta name="author" content="جهانتاب صنعت دیبا" />
         <title>{metadata.title}</title>
-      </head>
+      </Helmet>
       <body className="bg-white text-gray-900">{children}</body>
     </html>
   );

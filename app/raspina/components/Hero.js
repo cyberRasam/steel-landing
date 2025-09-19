@@ -29,10 +29,6 @@ export default function Hero() {
         alt="Hero"
         className="absolute inset-0 w-full h-full object-cover opacity-20"
       />
-      <div className="bg-blue-500 text-white p-8 font-bold">Tailwind Test</div>
-      <div className="bg-blue-500 text-red p-8 font-bold text-center">
-        TAILWIND WORKS
-      </div>
     </section>
   );
 }
