@@ -3,8 +3,7 @@ import "./diba.css";
 
 export const metadata = {
   title: "جهانتاب صنعت دیبا | فولاد آلیاژی و زلامید صنعتی",
-  description:
-    "جهانتاب صنعت دیبا — تأمین کننده مستقیم فولاد آلیاژی و پلیمرهای مهندسی.",
+  description: "تأمین کننده مستقیم فولاد آلیاژی و پلیمرهای مهندسی",
 };
 
 export default function DibaLayout({ children }) {

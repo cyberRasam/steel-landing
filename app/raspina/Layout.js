@@ -4,7 +4,7 @@ import "./raspina.css";
 export const metadata = {
   title: "گسترش تجارت راسپینا | خرید و فروش فولاد و زلامید",
   description:
-    "فروش انواع مقاطع فولادی، میلگرد آلیاژی و پلیمر زلامید در سراسر ایران",
+    "انواع مقاطع فولادی، میلگرد آلیاژی و پلیمر زلامید در سراسر ایران",
 };
 
 export default function RaspinaLayout({ children }) {
