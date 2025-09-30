@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RaspinaLayout({ children }) {
   return (
-    <html lang="fa" dir="rtl">
+    <>
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={metadata.description} />
@@ -20,7 +20,9 @@ export default function RaspinaLayout({ children }) {
         <meta name="author" content="گسترش تجارت راسپینا" />
         <title>{metadata.title}</title>
       </Helmet>
-      <body className="bg-gray-50 text-gray-800">{children}</body>
-    </html>
+      <div className="bg-gray-50 text-gray-800" dir="rtl">
+        {children}
+      </div>
+    </>
   );
 }

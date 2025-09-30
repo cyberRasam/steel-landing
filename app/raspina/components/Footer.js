@@ -21,8 +21,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h4 className="font-bold text-xl mb-2">گسترش تجارت راسپینا</h4>
         <p className="text-sm mb-2">
-          فروش انواع مقاطع فولادی - تماس: ۰۹۱۲-XXX-XXXX - ایمیل:
-          contact@raspina.example
+          فروش انواع مقاطع فولادی - تماس: -8135 2246 021 - ایمیل:
+          Raspinatejarat22@gmail.com
         </p>
         <p className="text-xs opacity-80">
           © {new Date().getFullYear()} تمام حقوق محفوظ است.

@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function DibaLayout({ children }) {
   return (
-    <html lang="fa" dir="rtl">
+    <>
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={metadata.description} />
@@ -20,7 +20,9 @@ export default function DibaLayout({ children }) {
         <meta name="author" content="جهانتاب صنعت دیبا" />
         <title>{metadata.title}</title>
       </Helmet>
-      <body className="bg-white text-gray-900">{children}</body>
-    </html>
+      <div className="bg-gray-50 text-gray-800" dir="rtl">
+        {children}
+      </div>
+    </>
   );
 }
