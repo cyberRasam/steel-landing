@@ -47,6 +47,21 @@ export default function RootLayout({ children }) {
 
   const router = useRouter();
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const hostname = window.location.hostname;
+
+      if (domain.includes("raspina")) {
+        router.replace("/raspina");
+      } else if (hostname.includes("diba")) {
+        router.replace("/diba");
+      } else {
+        // Default fallback - you can set this to either /raspina or /diba
+        router.replace("/raspina");
+      }
+    }
+  }, [router]);
+
   console.log("Current domain:", domain);
   // Show loading or default theme while determining domain
   if (isLoading) {
