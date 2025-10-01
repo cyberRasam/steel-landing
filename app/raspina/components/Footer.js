@@ -24,6 +24,7 @@ export default function Footer() {
           فروش انواع مقاطع فولادی - تماس: -8135 2246 021 - ایمیل:
           Raspinatejarat22@gmail.com
         </p>
+        <p className="text-sm mb-2">موبایل: 09059647272 - مقدم</p>
         <p className="text-xs opacity-80">
           © {new Date().getFullYear()} تمام حقوق محفوظ است.
         </p>
